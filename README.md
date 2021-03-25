@@ -1,12 +1,5 @@
 **Associations!**
 
-Welcome to the associations exercise.
+We have courses, users, and enrollments.
 
-Check out the [`db/schema.rb`][schema] to see what your database will look like.
-
-Check out [`db/seeds.rb`][seedfile] to see what test data your database contains.
-
-The database has already been created and is standing by for your usage.
-
-[schema]: ./db/schema.rb
-[seedfile]: ./db/seeds.rb
+A course can have many enrolled students, and a student can be enrolled to many courses. The bridging model (and db table) is Enrollment. A course can also have prerequisites, which are other courses that you need to take first. And it has an instructor. Using the above 3 models, we should be able to create all these associations. Should be fun!
