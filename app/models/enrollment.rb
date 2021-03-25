@@ -2,8 +2,8 @@ class Enrollment < ApplicationRecord
 
     belongs_to(
         :user,
-        class_name: 'User'
-        foreign_key: :user_id,
+        class_name: 'User',
+        foreign_key: :student_id,
         primary_key: :id
     )
 
